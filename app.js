@@ -118,7 +118,7 @@ function setLang(lang) {
 
   const coverImg = document.getElementById("coverImg");
   if (coverImg) {
-    coverImg.src = lang === "en" ? "assets/tapa_en.jpg" : "assets/tapa_es.jpg";
+    coverImg.src = lang === "en" ? "tapa_en.jpg" : "tapa_es.jpg";
   }
 
   localStorage.setItem("landing_lang", lang);
@@ -189,3 +189,4 @@ function wireLinks() {
     btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang")));
   });
 })();
+
